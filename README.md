@@ -2,9 +2,9 @@
 
 ## An Enhanced Chess.js Library with Advanced Analysis and Tactical Insights
 
-[![NPM Version](https://img.shields.io/npm/v/better-chess.js.svg?style=flat-square)](https://www.npmjs.com/package/better-chessjs)
-[![NPM Downloads](https://img.shields.io/npm/dm/better-chess.js.svg?style=flat-square)](https://www.npmjs.com/package/better-chessjs)
-[![GitHub Stars](https://img.shields.io/github/stars/aakware/better-chess.js.svg?style=social)](https://github.com/aakware/better-chessjs/stargazers)
+[![NPM Version](https://img.shields.io/npm/v/better-chess.js.svg?style=flat-square)](https://www.npmjs.com/package/better-chess.js)
+[![NPM Downloads](https://img.shields.io/npm/dm/better-chess.js.svg?style=flat-square)](https://www.npmjs.com/package/better-chess.js)
+[![GitHub Stars](https://img.shields.io/github/stars/aakware/better-chess.js.svg?style=social)](https://github.com/aakware/better-chess.js/stargazers)
 [![License](https://img.shields.io/github/license/aakware/better-chess.js.svg?style=flat-square)](LICENSE)
 
 ---
