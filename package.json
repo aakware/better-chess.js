@@ -6,7 +6,7 @@
     "build": "tsc --project tsconfig.build.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["chess", "game", "typescript", "library", "better-chess"],
   "author": "",
   "license": "ISC",
   "description": "",
