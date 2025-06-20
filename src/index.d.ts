@@ -12,6 +12,14 @@ export type PieceInEffect = {
     defenders: PieceInEffect[];
 }
 
+export type PieceRecord = {
+    r: number;
+    n: number;
+    b: number;
+    q: number;
+    p: number;
+}
+
 export type TacticalMove = {
     tactic: 'fork' | 'pin' | 'skewer' | 'doubleCheck' | 'trap';
     targets?: PieceInEffect[];

@@ -27,3 +27,11 @@ export type MoveEffect = {
         b: PieceInEffect[];
     };
 };
+
+export type PieceRecord = {
+    r: number;
+    n: number;
+    b: number;
+    q: number;
+    p: number;
+}

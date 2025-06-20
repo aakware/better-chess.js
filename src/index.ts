@@ -1,11 +1,17 @@
-import { Chess } from 'chess.js';
+import { Chess, type Square } from 'chess.js';
 import { moveInfo } from './utils';
 
-import type { MoveEffect } from './types';
-export type { MoveEffect };
-
+import type { MoveEffect, PieceRecord } from './types';
 
 export class BetterChess extends Chess {
+  public material: {
+    w: PieceRecord;
+    b: PieceRecord;
+  } = {
+    w: { r: 2, n: 2, b: 2, q: 1, p: 8 },
+    b: { r: 2, n: 2, b: 2, q: 1, p: 8 },
+  };
+
   constructor(fen?: string, val?: { skipValidation?: boolean | undefined }) {
     super(fen, val);
   }
@@ -14,7 +20,19 @@ export class BetterChess extends Chess {
   /* 🎯 Analysis for current move */
   moveAndAnalyze(...args: Parameters<Chess['move']>) {
     const move = super.move(...args);
-    return move ? moveInfo(move.to, move.after, move.before) : null;
+    const turn = super.turn();
+
+    const analysis = move ? moveInfo(move.to, move.after, move.before) : null;
+    const piece = analysis?.capturedPiece;
+
+    if (piece) this.material[turn][piece.name as 'r' | 'n' | 'q' | 'p' | 'b']--;
+    
+    if (analysis?.type === 'promotion') {
+      const promotedPiece = move.promotion as 'q' | 'r' | 'b' | 'n';
+      this.material[turn === 'w' ? 'b' : 'w'][promotedPiece]++;
+    }
+
+    return analysis;
   }
 
 
