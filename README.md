@@ -234,6 +234,10 @@ And yes, it also updates automatically as moves are made, captures occur, and pr
 
 ## 💡 Why `better-chess.js`
 
+![Views Counter](https://views-counter.vercel.app/badge?pageId=better-chessjs&leftColor=524c4c&rightColor=02b12e&type=today&label=Viewers&style=none&label=Today)
+![Views Counter](https://views-counter.vercel.app/badge?pageId=better-chessjs&leftColor=524c4c&rightColor=02b12e&type=total&label=Viewers&style=none)
+![Views Counter](https://views-counter.vercel.app/badge?pageId=better-chessjs&leftColor=524c4c&rightColor=02b12e&type=unique&label=Viewers&style=none&label=Unique)
+
 Although `chess.js` provides a robust foundation for chess game logic, `better-chess.js` extends its capabilities by offering direct, integrated analysis for tactical patterns and positional characteristics. 
 
 This saves developers' time from having to implement complex analysis algorithms themselves, allowing them to focus on building engaging chess applications with advanced features.
